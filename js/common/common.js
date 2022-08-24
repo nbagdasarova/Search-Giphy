@@ -1,2 +1,8 @@
-export const  searchLink= 'https://api.giphy.com/v1/gifs/search?q=qweqe&limit=10&api_key=aFFKTuSMjd6j0wwjpFCPXZipQbcnw3vB&fmt=json';
-export const trensLink='https://api.giphy.com/v1/gifs/trending?limit=10&api_key=aFFKTuSMjd6j0wwjpFCPXZipQbcnw3vB&fmt=json';
+import { queryUrl } from './config.js';
+import { trendUrl } from './config.js';
+import { searchApiKey } from './config.js';
+import { searchApiQ } from './config.js';
+import { searchApiLimit } from './config.js';
+
+export let searchUrl=`${queryUrl}q=${searchApiQ}&limit=${searchApiLimit}&api_key=${searchApiKey}&fmt=json'`;
+export let seeTrendsUrl=`${trendUrl}&limit=${searchApiLimit}&api_key=${searchApiKey}&fmt=json'`;
