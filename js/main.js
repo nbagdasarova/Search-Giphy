@@ -1,8 +1,7 @@
-import {searchLink} from './common/common.js';
-import {trensLink} from './common/common.js';
+import { searchUrl } from './common/common.js';
+import { seeTrendsUrl } from './common/common.js';
 
-
-fetch(searchLink)
+fetch(searchUrl)
   .then((res) => {
     return res.json();
   })
@@ -12,6 +11,15 @@ fetch(searchLink)
     
   });
 
+  fetch(seeTrendsUrl)
+  .then((res) => {
+    return res.json();
+  })
+  .then((res) => {
+
+    console.log ('see tranding',res);
+    
+  });
 
 
 
