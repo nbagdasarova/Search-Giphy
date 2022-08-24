@@ -1,0 +1,2 @@
+export const  searchLink= 'https://api.giphy.com/v1/gifs/search?q=qweqe&limit=10&api_key=aFFKTuSMjd6j0wwjpFCPXZipQbcnw3vB&fmt=json';
+export const trensLink='https://api.giphy.com/v1/gifs/trending?limit=10&api_key=aFFKTuSMjd6j0wwjpFCPXZipQbcnw3vB&fmt=json';
